@@ -1,0 +1,125 @@
+body {
+    padding: 10%;
+    margin: 10%;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(126, 122, 122); /* Darker background for contrast */
+}
+
+.header-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Adjust alignment */
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: rgb(83, 76, 76);
+    padding: 20px; /* Added padding for spacing */
+}
+
+.content-left {
+    max-width: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.content-left img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.fullname {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.contact-info img {
+    height: 200px;
+    width: 300px; /* Adjusted width for consistency */
+    margin-right: 10px;
+}
+
+.socialmedias {
+    display: flex;
+    gap: 10px; /* Added gap for spacing */
+    padding: 30px;
+}
+
+.socialmedias img {
+    height: 24px; /* Set consistent size for icons */
+    width: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .content-left {
+        max-width: 100%; /* Full width for medium devices */
+        margin: 10px 0; /* Adjust margins */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-profile {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center;
+    }
+
+    .content-left {
+        max-width: 100%; /* Full width for mobile */
+        margin: 0 0 20px; /* Adjust margin for spacing */
+    }
+
+    .contact-info img {
+        height: 200px; /* Smaller images for mobile */
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fullname {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .contact-info div {
+        font-size: 0.9rem; /* Slightly smaller font for contact info */
+    }
+
+    .socialmedias img {
+        height: 20px; /* Smaller social media icons */
+        width: 20px;
+    }
+}
+.kenken{
+    font-size: large;
+}
+.section{
+    font-size: large;
+    text-align: center;
+}
+.goal{
+    font-size: large;
+}
